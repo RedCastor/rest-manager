@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "rest-manager-admin.css": {
+      "main": true,
+      "files": "styles/rest-manager-admin.scss"
+    },
+    "rest-manager-admin.js": {
+      "files": [
+        "scripts/rest-manager-admin.js"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  }
+}

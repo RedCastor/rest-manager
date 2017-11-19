@@ -1,0 +1,59 @@
+//
+// Rest Manager Admin
+// --------------------------------------------------
+
+
+//Rest Manager Page Settings
+.settings_page_settings_rest-manager {
+  //Multi Select wp style
+  .ms-container {
+    width: 100%;
+
+    .ms-selectable, .ms-selection {
+      color:      #23282d;
+      background-color: transparent;
+    }
+
+    .ms-list {
+      background-color: #fff;
+      height: 305px;
+    }
+  }
+
+  //Multi Select Chosen wp style
+  .chosen-container.regular-text .chosen-choices {
+    margin: 1px;
+    padding: 3px 5px;
+    font-size: 14px;
+    width: 25em !important;
+    border: 1px solid #ddd;
+  }
+  .chosen-container-active.regular-text .chosen-choices {
+    border: 1px solid #5897fb;
+  }
+
+
+  //Table module list
+  #rest_manager_routes .wp-list-table {
+
+    &.widefat thead td.check-column {
+      padding: 8px 10px;
+    }
+
+    b, strong {
+      font-weight: 600;
+    }
+
+    fieldset a.button.thickbox {
+      height: inherit;
+      float: right;
+      line-height: inherit;
+      margin-left: 5px;
+      margin-righ: 5px;
+    }
+
+    .disabled {
+      opacity: 0.65;
+    }
+  }
+}
