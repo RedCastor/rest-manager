@@ -67,7 +67,7 @@ function rest_manager_install_mu_plugin () {
 
   if (wp_mkdir_p( WPMU_PLUGIN_DIR )) {
 
-    $mu_plugin_filename = REST_MANAGER_PLUGIN_NAME . '.php';
+    $mu_plugin_filename = REST_MANAGER_MU_PLUGIN_NAME . '.php';
 
     if ( !file_exists( trailingslashit(WPMU_PLUGIN_DIR) . $mu_plugin_filename )) {
 
@@ -96,7 +96,7 @@ function rest_manager_install_mu_plugin () {
 function rest_manager_uninstall_mu_plugin () {
 
   //Uninstall MU PLUGIN
-  $mu_plugin_filename = trailingslashit(WPMU_PLUGIN_DIR) . REST_MANAGER_PLUGIN_NAME . '.php';
+  $mu_plugin_filename = trailingslashit(WPMU_PLUGIN_DIR) . REST_MANAGER_MU_PLUGIN_NAME . '.php';
   if ( file_exists( $mu_plugin_filename)) {
     @unlink( $mu_plugin_filename );
   }

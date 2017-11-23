@@ -36,3 +36,9 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 require_once plugin_dir_path(__FILE__ ) . 'includes/rest-manager-core-functions.php';
 
 rest_manager_uninstall_mu_plugin();
+
+//Delete options in database.
+global $wpdb;
+
+// Delete options.
+$wpdb->query("DELETE FROM $wpdb->options WHERE option_name LIKE '" . REST_MANAGER_PLUGIN_NAME . "\_%';");
