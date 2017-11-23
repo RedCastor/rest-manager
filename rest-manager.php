@@ -11,8 +11,8 @@
  * @wordpress-plugin
  * Plugin Name:       Rest Manager
  * Description:       Manage the all rest API route. diasble or filter plugins loaded on request rest api.
- * Version:           1.0.2
- * Author:            Auban le Grelle
+ * Version:           1.0.3
+ * Author:            RedCastor
  * Author URI:        http://redcastor.io
  * Copyright:         Copyright (c) 2017, RedCastor.
  * License:           MIT License
@@ -28,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 define('REST_MANAGER_PLUGIN_NAME',         'rest-manager');
 define('REST_MANAGER_MU_PLUGIN_NAME',      'rest-manager-request');
-define('REST_MANAGER_PLUGIN_VERSION',      '1.0.1');
+define('REST_MANAGER_PLUGIN_VERSION',      '1.0.3');
 
 //Plugin directory
 define('REST_MANAGER_PLUGIN_DIR', plugin_dir_path(__FILE__));

@@ -16,8 +16,8 @@
  * Plugin Name:       Rest Manager Request
  * Plugin URI:        http://redcastor.io
  * Description:       Manage the rest API.
- * Version:           1.0.2
- * Author:            Auban le Grelle
+ * Version:           1.0.3
+ * Author:            RedCastor
  * Author URI:        http://redcastor.io
  * Copyright:         Copyright (c) 2017, RedCastor.
  * License:           MIT License

@@ -1,5 +1,14 @@
 ### HEAD
 
+### 1.0.3: November 23th, 2017
+* Update Readme
+* Fix version
+
+### 1.0.2: November 23th, 2017
+* Fix mu plugin name
+* Fix pluggable function not exist.
+* Add delete option on uninstall plugin
+
 ### 1.0.1: November 18th, 2017
 * Remove unnecessary global functions
 
