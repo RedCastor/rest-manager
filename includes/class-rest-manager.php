@@ -196,11 +196,16 @@ class Rest_Manager {
 
     $this->loader->add_action( $this->plugin_name . '_version_update', $plugin_public, 'update_version', 10, 2 );
 
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+    $this->loader->add_action( 'after_setup_theme',  $plugin_public, 'init_options', 5);
 
-    $this->loader->add_action( 'init',   $plugin_public, 'init_options');
-    $this->loader->add_filter('rest_pre_dispatch', $plugin_public, 'rest_pre_dispatch', 1000, 3);
+    if (is_admin()) {
+      $this->loader->add_action( 'init',  $plugin_public, 'init_route_fields_options');
+    }
+    else {
+      $this->loader->add_action( 'rest_api_init',  $plugin_public, 'init_route_fields_options', 1000);
+    }
+
+    $this->loader->add_filter('rest_pre_dispatch',   $plugin_public, 'rest_pre_dispatch', 1000, 3);
 
 	}
 

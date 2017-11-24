@@ -172,6 +172,10 @@ class Rest_Manager_Settings {
    */
   public function register_fields( $fields ) {
 
+    $tabs_descriptor = array();
+    $sections_descriptor = array();
+    $fields_descriptor = array();
+
     foreach ($fields as $tab_key => $tabs) {
 
       $tabs_descriptor[] = array(
@@ -488,7 +492,13 @@ class Rest_Manager_Settings {
     $plugins = array();
 
     foreach ( get_plugins() as $filename => $plugin ) {
-      $plugins[$filename] = $plugin['Name'];
+
+      //Exclude this plugin
+      if ($filename === 'rest-manager/rest-manager.php') {
+        continue;
+      }
+
+      $plugins[$filename] = isset($plugin['Name']) ? $plugin['Name'] : $filename;
     }
 
     return $plugins;

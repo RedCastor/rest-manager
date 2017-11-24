@@ -17,7 +17,30 @@
 function rest_manager_settings_fields()
 {
 
-  $routes_fields = array();
+  $fields = array(
+    'rest_manager_routes' => array(
+      'title' => __('Rest API', 'rest-manager'),
+      'sections' => array(
+        'routes' => array(
+          'display'=> 'table',
+          'fields' => array(),
+          'action' => array( 'Rest_Manager_Admin_Fields_Action', 'routes_decode' ),
+        ),
+      ),
+    ),
+  );
+
+  return apply_filters('rest_manager_settings_fields', $fields);
+}
+
+
+/**
+ * Define general settings routes fields
+ */
+function rest_manager_settings_route_fields()
+{
+
+  $route_fields = array();
 
   $rest_server = rest_get_server();
   $rest_routes = $rest_server->get_routes();
@@ -35,7 +58,7 @@ function rest_manager_settings_fields()
     }
 
 
-    $routes_fields[] = array(
+    $route_fields[] = array(
       'name'  => $route,
       'encode' => 'urlencode',
       'label' => esc_html( $route ),
@@ -60,21 +83,7 @@ function rest_manager_settings_fields()
 
   }
 
-
-  $fields = array(
-    'rest_manager_routes' => array(
-      'title' => __('Rest API', 'rest-manager'),
-      'sections' => array(
-        'routes' => array(
-          'display'=> 'table',
-          'fields' => $routes_fields,
-          'action' => array( 'Rest_Manager_Admin_Fields_Action', 'routes_decode' ),
-        ),
-      ),
-    ),
-  );
-
-  return apply_filters('rest_manager_settings_fields', $fields);
+  return apply_filters('rest_manager_settings_route_fields', $route_fields);
 }
 
 

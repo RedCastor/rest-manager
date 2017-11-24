@@ -69,24 +69,6 @@ class Rest_Manager_Public {
 
   }
 
-    /**
-	 * Register the stylesheets for the public-facing side of the site.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_styles() {
-
-	}
-
-	/**
-	 * Register the JavaScript for the public-facing side of the site.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_scripts() {
-
-	}
-
 
   /**
    * Initilaize options.
@@ -105,6 +87,25 @@ class Rest_Manager_Public {
     $fields = rest_manager_settings_fields();
 
     $settings_page->register_fields( $fields );
+
+  }
+
+
+  /**
+   * Initilaize routes fields options.
+   *
+   * @since   1.0.0
+   */
+  public function init_route_fields_options() {
+
+    //Setup Settings Page
+    $settings_page = Rest_Manager_Settings::getInstance( $this->plugin_name );
+
+    $route_fields = rest_manager_settings_route_fields();
+
+    foreach ( $route_fields as $route_field) {
+      $settings_page->add_field( 'rest_manager_routes', 'routes', $route_field );
+    }
 
   }
 
