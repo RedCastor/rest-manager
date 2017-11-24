@@ -39,6 +39,9 @@ Features:
 
 == Changelog ==
 
+= 1.0.4 =
+* Add remove old deprecated mu-plugin.
+
 = 1.0.3 =
 * Update Readme
 * Fix version

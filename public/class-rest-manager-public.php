@@ -119,6 +119,12 @@ class Rest_Manager_Public {
     //Install MU Plugin
     if( $new_version !== $old_version ){
 
+      //Remove deprecated mu plugin
+      $deprecated_mu_plugin_filename = trailingslashit(WPMU_PLUGIN_DIR) . REST_MANAGER_PLUGIN_NAME . '.php';
+      if ( file_exists( $deprecated_mu_plugin_filename)) {
+        @unlink( $deprecated_mu_plugin_filename );
+      }
+
       rest_manager_install_mu_plugin();
     }
 

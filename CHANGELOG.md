@@ -1,5 +1,8 @@
 ### HEAD
 
+### 1.0.4: November 23th, 2017
+* Add remove old deprecated mu-plugin.
+
 ### 1.0.3: November 23th, 2017
 * Update Readme
 * Fix version
