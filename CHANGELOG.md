@@ -2,7 +2,7 @@
 
 ### 1.0.5: November 24th, 2017
 * Fix load settings fields for route fields
-* On filter route force to load rest-manager.
+* On filter route force to load rest-manager if route is filtered and if not active.
 
 ### 1.0.4: November 23th, 2017
 * Add remove old deprecated mu-plugin.

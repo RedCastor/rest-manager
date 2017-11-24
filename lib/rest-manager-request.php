@@ -16,7 +16,7 @@
  * Plugin Name:       Rest Manager Request
  * Plugin URI:        http://redcastor.io
  * Description:       Manage the rest API.
- * Version:           1.0.6
+ * Version:           1.0.5
  * Author:            RedCastor
  * Author URI:        http://redcastor.io
  * Copyright:         Copyright (c) 2017, RedCastor.
@@ -104,7 +104,7 @@ endif;
  * Active MU plugin if rest-manager plugin is active
  ***************************************************************************/
 if(in_array( 'rest-manager/rest-manager.php', (array) get_option( 'active_plugins', array() ) )){
-  $plugin_load_filter = new Rest_Manager_Request();
+   new Rest_Manager_Request();
 }
 
 
@@ -255,8 +255,8 @@ class Rest_Manager_Request {
           if ( $route_filter_option['plugins']['value'] === 'on' ) {
             $new_options = (array)$route_filter_option['plugins']['options'];
 
-            //Load always rest-manager on filter.
-            if (!in_array('rest-manager/rest-manager.php', $new_options)) {
+            //Load always rest-manager on filter on and active is off.
+            if ($route_filter_option['active'] === 'off' && !in_array('rest-manager/rest-manager.php', $new_options)) {
               $new_options[] = 'rest-manager/rest-manager.php';
             }
           }

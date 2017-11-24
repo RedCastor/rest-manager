@@ -4,7 +4,7 @@ Tags: api, rest, resp-api, wp-json, manager, rest-manager
 Requires at least: 4.8
 Requires PHP: 5.6.31
 Tested up to: 4.8
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -38,6 +38,10 @@ Features:
 2. Rest route filter plugin.
 
 == Changelog ==
+
+= 1.0.5 =
+* Fix load settings fields for route fields
+* On filter route force to load rest-manager if route is filtered and if not active.
 
 = 1.0.4 =
 * Add remove old deprecated mu-plugin.
