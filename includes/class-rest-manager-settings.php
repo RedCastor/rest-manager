@@ -1261,6 +1261,34 @@ class Rest_Manager_Settings {
   }
 
   /**
+   * Set default values
+   *
+   * @since 1.0.7
+   *
+   * @param $field
+   * @param $value
+   * @return mixed
+   */
+  public function set_default_values ( $field, $value ) {
+
+    //Set default value if sub_fields option not set.
+    if ( $field['type'] === 'sub_fields' ) {
+
+      if (!is_array($value)) {
+        $value = array();
+      }
+
+      foreach ($field['sub_fields'] as $sub_field) {
+        if (!isset($value[$sub_field['name']])) {
+          $value[$sub_field['name']] = isset($sub_field['default']) ? $sub_field['default'] : '';
+        }
+      }
+    }
+
+    return $value;
+  }
+
+  /**
    * Tabbable JavaScript codes & Initiate Color Picker
    *
    * This code uses localstorage for displaying active tabs
@@ -1516,7 +1544,7 @@ class Rest_Manager_Settings {
           echo '<thead>';
           echo '<tr>';
           echo '<td id="cb" class="manage-column column-cb check-column">';
-          echo __( 'Select', 'rest-manager');
+          echo __( 'Active', 'rest-manager');
           echo '</td>';
           echo '<th scope="col" id="name" class="manage-column column-name column-primary">' . __('Routes', 'rest-manager') . '</th>';
           echo '<th scope="col" id="description" class="manage-column column-description">' . __('Description', 'rest-manager') . '</th>';

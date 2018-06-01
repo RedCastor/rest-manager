@@ -14,7 +14,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: RedCastor <team@redcastor.io>\n"
 "MIME-Version: 1.0\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,"
 "_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;esc_attr__;esc_attr_e;"
@@ -31,176 +31,158 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-6: admin/dist\n"
 "X-Poedit-SearchPathExcluded-7: admin/assets\n"
 
-#: admin/class-rest-manager-admin.php:153
-msgid "Loader"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:469
-msgid "Is Home"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:470
-msgid "Is Front page"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:471
-msgid "Is Home and Front page"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:472
-msgid "Is Single"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:473
-msgid "Is Sticky"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:474
-msgid "Is Page"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:475
-msgid "Is Page Template"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:476
-msgid "Is Category"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:477
-msgid "Is Tag"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:478
-msgid "Is Taxonomy"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:479
-msgid "Is Author "
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:480
-msgid "Is Archive"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:481
-msgid "Is Search"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:482
-msgid "Is 404"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:483
-msgid "Is Singular"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:484
-msgid "Is User Logged In"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:489
-msgid "Page"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:495
-msgid "Page Template "
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:507
-msgid "Post Type "
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:513
-msgid "Is Woocommerce"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:514
-msgid "Is Shop"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:515
-msgid "Is Product Category"
+#: admin/class-rest-manager-admin.php:154
+msgid "Rest Manager"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:516
-msgid "Is Product Tag"
+msgid "Is Home"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:517
-msgid "Is Product"
+msgid "Is Front page"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:518
-msgid "Is Cart"
+msgid "Is Home and Front page"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:519
-msgid "Is Checkout"
+msgid "Is Single"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:520
-msgid "Is Account Page"
+msgid "Is Sticky"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:521
-msgid "Is Endpoint Url"
+msgid "Is Page"
 msgstr ""
 
 #: includes/class-rest-manager-settings.php:522
+msgid "Is Page Template"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:523
+msgid "Is Category"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:524
+msgid "Is Tag"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:525
+msgid "Is Taxonomy"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:526
+msgid "Is Author "
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:527
+msgid "Is Archive"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:528
+msgid "Is Search"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:529
+msgid "Is 404"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:530
+msgid "Is Singular"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:531
+msgid "Is User Logged In"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:536
+msgid "Page"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:542
+msgid "Page Template "
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:554
+msgid "Post Type "
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:560
+msgid "Is Woocommerce"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:561
+msgid "Is Shop"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:562
+msgid "Is Product Category"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:563
+msgid "Is Product Tag"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:564
+msgid "Is Product"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:565
+msgid "Is Cart"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:566
+msgid "Is Checkout"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:567
+msgid "Is Account Page"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:568
+msgid "Is Endpoint Url"
+msgstr ""
+
+#: includes/class-rest-manager-settings.php:569
 msgid "Is Ajax"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:688
-msgid "Select your conditions"
+#: includes/class-rest-manager-settings.php:861
+msgid "Select plugins"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:688
-#: includes/class-rest-manager-settings.php:1221
-msgid "Conditions"
+#: includes/class-rest-manager-settings.php:865
+msgid "Select conditions"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:1043
+#: includes/class-rest-manager-settings.php:1105
 msgid "Choose File"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:1222
-msgid "Selected Conditions"
+#: includes/class-rest-manager-settings.php:1519
+msgid "Active"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:1457
-msgid "Select"
+#: includes/class-rest-manager-settings.php:1521
+msgid "Routes"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:1459
-msgid "Module"
-msgstr ""
-
-#: includes/class-rest-manager-settings.php:1460
+#: includes/class-rest-manager-settings.php:1522
 msgid "Description"
 msgstr ""
 
-#: includes/class-rest-manager-settings.php:1461
+#: includes/class-rest-manager-settings.php:1523
 msgid "Options"
 msgstr ""
 
-#: includes/rest-manager-settings-descriptor.php:21
+#: includes/rest-manager-settings-descriptor.php:22
 msgid "Rest API"
 msgstr ""
 
-#: includes/rest-manager-settings-descriptor.php:33
-msgid "Angular wrapper for sending log to Rollbar."
-msgstr ""
-
-#: includes/rest-manager-settings-descriptor.php:79
-#: includes/rest-manager-settings-descriptor.php:114
-msgid "Load on conditions."
-msgstr ""
-
-#: includes/rest-manager-settings-descriptor.php:92
-msgid "A directive make json object or string printed in human readable way."
-msgstr ""
-
-#: includes/rest-manager-settings-descriptor.php:108
-msgid "Load style."
+#: includes/rest-manager-settings-descriptor.php:77
+msgid "Filter plugins"
 msgstr ""

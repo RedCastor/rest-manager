@@ -140,21 +140,25 @@ function rest_manager_get_option( $option, $section , $default = '' ) {
  */
 function rest_manager_get_options( $section ) {
 
-  $settings_page = Rest_Manager_Settings::getInstance( REST_MANAGER_PLUGIN_NAME );
-  $options = array();
+  $settings = Rest_Manager_Settings::getInstance( REST_MANAGER_PLUGIN_NAME );
+  $section_options = array();
 
   //Search Field for section option
-  foreach ($settings_page->get_fields() as $key => $tab ){
+  foreach ($settings->get_fields() as $key => $tab ){
     if ( isset($tab[$section]) ) {
       foreach ($tab[$section] as $field_key => $field) {
+
         $default = isset($field['default']) ? $field['default'] : '';
-        $options[$field['name']] = $settings_page->get_option( $field['name'], $section, $default, false );
+        $value = $settings->get_option( $field['name'], $section, $default, false );
+        $value = $settings->set_default_values($field, $value);
+
+        $section_options[$field['name']] = $value;
       }
       break;
     }
   }
 
-  return $options;
+  return $section_options;
 }
 
 
@@ -290,7 +294,7 @@ function rest_manager_get_active_routes() {
  */
 function rest_manager_get_route_options( $route ) {
 
-  $routes = rest_manager_get_active_routes( false );
+  $routes = rest_manager_get_active_routes();
 
   if ( isset($routes[$route]) ) {
     return $routes[$route];

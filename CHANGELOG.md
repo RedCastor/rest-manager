@@ -1,5 +1,12 @@
 ### HEAD
 
+### 1.0.7: June 1th, 2018
+* Fix default active "on" route option if route not exist in "rest-manager_routes" wp options. 
+  On install new plugin with new routes the route option is not correctly set to default.
+
+### 1.0.6: December 14th, 2017
+* Change settings column name from Select to Active
+
 ### 1.0.5: November 24th, 2017
 * Fix load settings fields for route fields
 * On filter route force to load rest-manager if route is filtered and if not active.
